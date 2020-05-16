@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="${hello}"></h1>
+    <h1>寿险业暗红色的好哈市ash</h1>
+    <div>
+            <h3 th:each="tempUser:${User}">[[${tempUser}]]</h3>
+        </div>
+        <div>
+            <span th:each="tempUser:${User}" th:utext="${tempUser}"></span>
+        </div>
+</body>
+</html>
